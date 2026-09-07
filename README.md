@@ -61,6 +61,28 @@ npx serve .
 
 Open [http://localhost:8080](http://localhost:8080) in your browser.
 
+## 🚀 Deploying to Render (Free Static Site)
+
+This repository includes a pre-configured [`render.yaml`](./render.yaml) Blueprint for instant 1-click deployment on Render:
+
+### Method A: Connect as a Static Site (Recommended)
+1. Go to [Render Dashboard](https://dashboard.render.com/).
+2. Click **New +** → **Static Site**.
+3. Connect your GitHub repository: `jhenkar255/myportfolio`.
+4. Configure settings:
+   - **Name**: `jhenkar-portfolio`
+   - **Branch**: `main`
+   - **Build Command**: *(leave empty)*
+   - **Publish Directory**: `.`
+5. Click **Create Static Site**.
+6. Your portfolio will be live at `https://jhenkar-portfolio.onrender.com` with free global CDN and SSL!
+
+### Method B: Deploy using Render Blueprint
+1. Go to [Render Dashboard](https://dashboard.render.com/).
+2. Click **New +** → **Blueprint**.
+3. Select `jhenkar255/myportfolio`.
+4. Render will detect `render.yaml` and configure everything automatically. Click **Apply**.
+
 ---
 
 ## 📬 Contact & Connect
